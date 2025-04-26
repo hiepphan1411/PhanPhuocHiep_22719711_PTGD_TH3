@@ -54,10 +54,12 @@ const NewsSection = () => {
       <span className="text-red-600 mr-2">›</span>
       <div>
         <div className="flex items-center">
-          <p className="font-medium">{item.title}</p>
-          {item.isNew && (
-            <span className="ml-2 bg-red-600 text-white text-xs px-2 rounded-sm">NEW</span>
-          )}
+          <a href='#'>
+            <p className="font-medium">{item.title}</p>
+            {item.isNew && (
+              <span className="ml-2 bg-red-600 text-white text-xs px-2 rounded-sm">NEW</span>
+            )}
+          </a>
         </div>
         <p className="text-gray-500 text-sm">{item.date}</p>
       </div>
@@ -67,8 +69,8 @@ const NewsSection = () => {
   const SectionTitle = ({ title, viewAllLink }) => (
     <div className="flex justify-between items-center mb-4 border-b-2 border-gray-300 pb-2">
       <h2 className="text-lg font-bold text-blue-900">{title}</h2>
-      <a 
-        href={viewAllLink} 
+      <a
+        href={viewAllLink}
         className="bg-gray-300 text-gray-700 px-3 py-1 text-sm"
       >
         xem tất cả

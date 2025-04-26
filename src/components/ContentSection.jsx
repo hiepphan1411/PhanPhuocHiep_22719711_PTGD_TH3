@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContentSection = () => {
   return (
-    <div className="bg-blue-800 py-4">
+    <div className="bg-blue-800 py-4 mt-10">
       <div className="container mx-auto flex sm:flex-row flex-wrap text-white">
         {/* Column 1 */}
         <div className="sm:w-1/2 lg:w-1/3 px-4 mb-4">
