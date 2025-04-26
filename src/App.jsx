@@ -3,6 +3,8 @@ import Navbar from './components/Navbar'
 import Slider from './components/Slider'
 import NewsSection from './components/NewsSection'
 import SideMenu from './components/SideMenu'
+import ContentSection from './components/ContentSection'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
             <SideMenu />
             <NewsSection />
           </div>
+          <ContentSection />
+          <Footer />
         </div>
       </div>
     </>
